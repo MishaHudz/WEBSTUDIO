@@ -58,6 +58,12 @@
             </li>
           </ul>
         </address>
+
+        <button class="header-burger js-open-menu" type="button">
+          <svg class="open-menu-btn" width="32" height="32">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -128,21 +134,33 @@
           <ul class="galary">
             <li class="galary-item">
               <img
-                src="./images/rectangle1.jpg"
+                srcset="
+                  ./images/works/rectangle1.jpg    1x,
+                  ./images/works/rectangle1@2x.jpg 2x
+                "
+                src="./images/works/rectangle1.jpg"
                 alt="User`s main page  on the iMac screen"
                 width="360"
               />
             </li>
             <li class="galary-item">
               <img
-                src="./images/rectangle2.jpg"
+                srcset="
+                  ./images/works/rectangle2.jpg    1x,
+                  ./images/works/rectangle2@2x.jpg 2x
+                "
+                src="./images/works/rectangle2.jpg"
                 alt="Four samples of messenger interface on iphone`s screen"
                 width="360"
               />
             </li>
             <li class="galary-item">
               <img
-                src="./images/rectangle3.jpg"
+                srcset="
+                  ./images/works/rectangle3.jpg    1x,
+                  ./images/works/rectangle3@2x.jpg 2x
+                "
+                src="./images/works/rectangle3.jpg"
                 alt="Laptop on the table and smartphone in the right hand"
                 width="360"
               />
@@ -157,7 +175,8 @@
             <li class="team-member">
               <img
                 class="member-photo"
-                src="./images/mark.jpg"
+                srcset="./images/team/mark.jpg 1x, ./images/team/mark@2x.jpg 2x"
+                src="./images/team/mark.jpg"
                 alt="Man in a blue shirt, he has short, dark hair and beard"
                 width="264"
               />
@@ -219,7 +238,8 @@
             <li class="team-member">
               <img
                 class="member-photo"
-                src="./images/tom.jpg"
+                srcset="./images/team/tom.jpg 1x, ./images/team/tom@2x.jpg 2x"
+                src="./images/team/tom.jpg"
                 alt="Young man in a blue shirt, he has brown hair and beard"
                 width="264"
               />
@@ -281,7 +301,11 @@
             <li class="team-member">
               <img
                 class="member-photo"
-                src="./images/camila.jpg"
+                srcset="
+                  ./images/team/camila.jpg    1x,
+                  ./images/team/camila@2x.jpg 2x
+                "
+                src="./images/team/camila.jpg"
                 alt="Young woman in a pink sweater, she has brown, long hair "
                 width="264"
               />
@@ -343,7 +367,11 @@
             <li class="team-member">
               <img
                 class="member-photo"
-                src="./images/daniel.jpg"
+                srcset="
+                  ./images/team/daniel.jpg    1x,
+                  ./images/team/daniel@2x.jpg 2x
+                "
+                src="./images/team/daniel.jpg"
                 alt="Young man in gray t-shirt, he has dark hair and  beard"
                 width="264"
               />
@@ -487,7 +515,7 @@
     </main>
     <footer class="page-footer">
       <div class="container footer-container">
-        <div>
+        <div class="footer-decription">
           <a class="logo-footer link" href="./index.html">
             Web<span class="logo-right-part">Studio</span>
           </a>
@@ -577,7 +605,6 @@
             <use href="./images/icons.svg#close-button"></use>
           </svg>
         </button>
-
         <form>
           <strong class="modal-titel"
             >Leave your contacts and we will call you back
@@ -659,6 +686,102 @@
         </form>
       </div>
     </div>
+
+    <!-- Menu -->
+    <div class="mobile-menu js-menu-container">
+      <button
+        class="mobile-menu-close modal-btn js-close-menu"
+        type="button"
+        data-modal-close
+      >
+        <svg class="close-btn" width="8" height="8">
+          <use href="./images/icons.svg#close-button"></use>
+        </svg>
+      </button>
+      <ul class="menu-nav">
+        <li class="menu-nav-item">
+          <a href="./index.html" class="menu-nav-link">Studio</a>
+        </li>
+        <li class="menu-nav-item">
+          <a href="./portfolio.html" class="menu-nav-link">Portfolio</a>
+        </li>
+        <li class="menu-nav-item">
+          <a href="#" class="menu-nav-link selected">Contacts</a>
+        </li>
+      </ul>
+      <div>
+        <ul class="menu-contacts">
+          <li class="menu-contacts-item">
+            <a class="menu-contacts-tel" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="menu-contacts-item">
+            <a class="menu-contacts-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-media-list">
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://ua.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

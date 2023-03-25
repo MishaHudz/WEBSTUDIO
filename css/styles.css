@@ -342,12 +342,12 @@ a {
   color: var(--main-white);
 
   margin: 0px auto 72px;
-  width: 320px;
+  max-width: 320px;
 }
 
 @media screen and (min-width: 768px) {
   .hero-titel {
-    width: 496px;
+    max-width: 496px;
     font-size: 56px;
     margin: 0px auto 36px;
   }
@@ -458,7 +458,7 @@ a {
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 396px;
+  max-width: 396px;
 }
 
 .advantages-item-text {
@@ -871,12 +871,24 @@ a {
 
 .filter {
   display: flex;
-  justify-content: center;
-  margin-bottom: 72px;
+
+  column-gap: 24px;
+  row-gap: 16px;
+  margin-bottom: 48px;
+  flex-wrap: wrap;
 }
 
-.filter-selector + .filter-selector {
-  margin-left: 24px;
+@media only screen and (min-width: 768px) {
+  .filter {
+    justify-content: center;
+    margin-bottom: 64px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .filter {
+    margin-bottom: 72px;
+  }
 }
 
 /* !!!!!!!!!!!!!!!!!Portfolio cards!!!!!!!!!!!!!!!! */
@@ -885,11 +897,29 @@ a {
   display: flex;
   flex-wrap: wrap;
   row-gap: 48px;
-  column-gap: 24px;
 }
 
 .samples-item {
-  width: 360px;
+  max-width: 396px;
+}
+@media only screen and (min-width: 768px) {
+  .samples-item {
+    max-width: 356px;
+  }
+  .samples {
+    row-gap: 72px;
+    column-gap: 24px;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .samples-item {
+    max-width: 360px;
+  }
+
+  .samples {
+    row-gap: 48px;
+  }
 }
 
 .samples-item-link {
@@ -1021,14 +1051,13 @@ a {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 4px;
 
-  padding: 72px 16px;
-  padding-bottom: 24px;
+  padding: 72px 16px 24px 16px;
 }
 
 @media screen and (min-width: 768px) {
   .modal {
     width: 408px;
-    padding: 72px 24px;
+    padding: 72px 24px 24px 24px;
   }
 }
 
@@ -1275,6 +1304,18 @@ a {
   font-size: 36px;
   line-height: 1.1px;
   color: var(--accent-color);
+
+  transition: font-size var(--animation-properties),
+    font-weight var(--animation-properties);
+}
+
+@media only screen and (max-width: 423px) {
+  .menu-contacts-tel {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 1.2;
+    color: var(--accent-color);
+  }
 }
 
 .menu-contacts-mail {
@@ -1288,6 +1329,14 @@ a {
   display: flex;
   justify-content: center;
   gap: 56px;
+
+  transition: gap var(--animation-properties);
+}
+
+@media only screen and (max-width: 355px) {
+  .menu-media-list {
+    gap: 30px;
+  }
 }
 
 .menu-media-link {

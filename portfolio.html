@@ -26,34 +26,44 @@
           </a>
           <ul class="navigation">
             <li class="navigation-item">
-              <a href="./index.html" class="navigation-item-link">Studio</a>
+              <a href="./index.html" class="navigation-item-link link"
+                >Studio</a
+              >
             </li>
             <li class="navigation-item">
               <a
                 href="./portfolio.html"
-                class="current-page navigation-item-link"
+                class="navigation-item-link current-page link"
                 >Portfolio</a
               >
             </li>
             <li class="navigation-item">
-              <a href="#" class="navigation-item-link">Contacts</a>
+              <a href="#" class="navigation-item-link link">Contacts</a>
             </li>
           </ul>
         </nav>
         <address class="header-address">
           <ul class="contacts">
             <li class="contacts-item">
-              <a href="mailto:info@devstudio.com" class="contacts-item-list"
+              <a
+                href="mailto:info@devstudio.com"
+                class="contacts-item-list link"
                 >info@devstudio.com</a
               >
             </li>
             <li class="contacts-item">
-              <a href="tel:+110001111111" class="contacts-item-list"
+              <a href="tel:+110001111111" class="contacts-item-list link"
                 >+11 (000) 111-11-11</a
               >
             </li>
           </ul>
         </address>
+
+        <button class="header-burger js-open-menu" type="button">
+          <svg class="open-menu-btn" width="32" height="32">
+            <use href="./images/icons.svg#menu-open"></use>
+          </svg>
+        </button>
       </div>
     </header>
     <main>
@@ -81,11 +91,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio1.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-desk.jpg    1x,
+                        ./images/portfolio/portfolio1-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-tab.jpg    1x,
+                        ./images/portfolio/portfolio1-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio1-mob.jpg    1x,
+                        ./images/portfolio/portfolio1-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio1-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -104,11 +140,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio2.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-desk.jpg    1x,
+                        ./images/portfolio/portfolio2-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-tab.jpg    1x,
+                        ./images/portfolio/portfolio2-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio2-mob.jpg    1x,
+                        ./images/portfolio/portfolio2-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio2-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -127,11 +189,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio3.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-desk.jpg    1x,
+                        ./images/portfolio/portfolio3-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-tab.jpg    1x,
+                        ./images/portfolio/portfolio3-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio3-mob.jpg    1x,
+                        ./images/portfolio/portfolio3-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio3-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -150,11 +238,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio4.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-desk.jpg    1x,
+                        ./images/portfolio/portfolio4-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-tab.jpg    1x,
+                        ./images/portfolio/portfolio4-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio4-mob.jpg    1x,
+                        ./images/portfolio/portfolio4-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio4-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -173,11 +287,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio5.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-desk.jpg    1x,
+                        ./images/portfolio/portfolio5-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-tab.jpg    1x,
+                        ./images/portfolio/portfolio5-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio5-mob.jpg    1x,
+                        ./images/portfolio/portfolio5-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio5-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -196,11 +336,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio6.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-desk.jpg    1x,
+                        ./images/portfolio/portfolio6-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-tab.jpg    1x,
+                        ./images/portfolio/portfolio6-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio6-mob.jpg    1x,
+                        ./images/portfolio/portfolio6-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio6-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -219,11 +385,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio7.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-desk.jpg    1x,
+                        ./images/portfolio/portfolio7-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-tab.jpg    1x,
+                        ./images/portfolio/portfolio7-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio7-mob.jpg    1x,
+                        ./images/portfolio/portfolio7-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio7-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -242,11 +434,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio8.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-desk.jpg    1x,
+                        ./images/portfolio/portfolio8-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-tab.jpg    1x,
+                        ./images/portfolio/portfolio8-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio8-mob.jpg    1x,
+                        ./images/portfolio/portfolio8-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio8-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -265,11 +483,37 @@
             <li class="samples-item">
               <a class="samples-item-link" href="./portfolio.html">
                 <div class="overlay">
-                  <img
-                    src="./images/portfolio9.jpg"
-                    alt="Seven interface screens samples"
-                    width="360"
-                  />
+                  <picture>
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-desk.jpg    1x,
+                        ./images/portfolio/portfolio9-desk@2x.jpg 2x
+                      "
+                      media="(min-width:1200px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-tab.jpg    1x,
+                        ./images/portfolio/portfolio9-tab@2x.jpg 2x
+                      "
+                      media="(min-width:768px)"
+                    />
+
+                    <source
+                      srcset="
+                        ./images/portfolio/portfolio9-mob.jpg    1x,
+                        ./images/portfolio/portfolio9-mob@2x.jpg 2x
+                      "
+                      media="(max-width:767px)"
+                    />
+
+                    <img
+                      src="./images/portfolio/portfolio9-mob.jpg"
+                      alt="Seven interface screens samples"
+                      width=""
+                    />
+                  </picture>
 
                   <div class="overley-content">
                     <p class="overley-text">
@@ -373,5 +617,102 @@
         </form>
       </div>
     </footer>
+    <!-- Menu -->
+    <div class="mobile-menu js-menu-container">
+      <button
+        class="mobile-menu-close modal-btn js-close-menu"
+        type="button"
+        data-modal-close
+      >
+        <svg class="close-btn" width="8" height="8">
+          <use href="./images/icons.svg#close-button"></use>
+        </svg>
+      </button>
+      <ul class="menu-nav">
+        <li class="menu-nav-item">
+          <a href="./index.html" class="menu-nav-link">Studio</a>
+        </li>
+        <li class="menu-nav-item">
+          <a href="./portfolio.html" class="menu-nav-link selected"
+            >Portfolio</a
+          >
+        </li>
+        <li class="menu-nav-item">
+          <a href="#" class="menu-nav-link">Contacts</a>
+        </li>
+      </ul>
+      <div>
+        <ul class="menu-contacts">
+          <li class="menu-contacts-item">
+            <a class="menu-contacts-tel" href="tel:+110001111111"
+              >+11 (000) 111-11-11</a
+            >
+          </li>
+          <li class="menu-contacts-item">
+            <a class="menu-contacts-mail" href="mailto:info@devstudio.com"
+              >info@devstudio.com</a
+            >
+          </li>
+        </ul>
+        <ul class="menu-media-list">
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://www.instagram.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#instagram"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://twitter.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://www.facebook.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#facebook"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="menu-media-item">
+            <a
+              class="menu-media-link"
+              href="https://ua.linkedin.com/"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <svg class="menu-media-link-item" width="24" height="24">
+                <use href="./images/icons.svg#linkedin"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+    </div>
+
+    <script src="./js/mobile-menu.js"></script>
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

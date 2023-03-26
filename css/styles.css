@@ -941,6 +941,10 @@ a {
   outline: transparent;
 }
 
+.project-text {
+  color: var(--primery-text-color);
+}
+
 .samples-description {
   padding-top: 32px;
   padding-bottom: 32px;

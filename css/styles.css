@@ -22,6 +22,8 @@ body {
 
   color: var(--primery-text-color);
   background-color: var(--main-white);
+
+  padding-top: 72px;
 }
 
 img {
@@ -270,7 +272,6 @@ a {
   text-align: center;
   margin: 0 auto;
   padding: 112px 0px;
-  margin-top: 72px;
 }
 
 @media (min-device-pixel-ratio: 2),
@@ -892,6 +893,11 @@ a {
 }
 
 /* !!!!!!!!!!!!!!!!!Portfolio cards!!!!!!!!!!!!!!!! */
+@media only screen and (max-width: 428px) {
+  .portfolio-picture-content {
+    width: 100%;
+  }
+}
 
 .samples {
   display: flex;
@@ -1007,16 +1013,16 @@ a {
   margin-right: auto;
   padding: 0px 16px;
   max-width: 428px;
-  /* outline: 2px solid tomato; */
+  outline: 2px solid tomato;
 }
 
-@media screen and (min-width: 768px) {
+@media only screen and (min-width: 768px) {
   .container {
     max-width: 768px;
   }
 }
 
-@media screen and (min-width: 1200px) {
+@media only screen and (min-width: 1200px) {
   .container {
     max-width: 1158px;
     padding: 0px 15px;

@@ -5,9 +5,9 @@ const refs = {
 
 const { filterButtons, arrOfCartMarcers } = refs;
 
-filterButtons.addEventListener('click', onFilterButttonClick);
+filterButtons.addEventListener('click', onFilterButtonClick);
 
-function onFilterButttonClick(evt) {
+function onFilterButtonClick(evt) {
   if (evt.target.type !== 'button') return;
 
   filterPortfolioCards(arrOfCartMarcers, evt.target.innerHTML.toLowerCase());

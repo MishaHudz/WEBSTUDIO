@@ -1409,3 +1409,7 @@ a {
   visibility: visible;
   pointer-events: initial;
 }
+
+.hide-portfolio-elem {
+  display: none;
+}
